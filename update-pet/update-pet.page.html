@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Update test
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Test Site Update</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-item>
+	<ion-label position="floating">User_id</ion-label>
+	<ion-input [(ngModel)]="user_id"></ion-input>
+  </ion-item>
+  <ion-item>
+	<ion-label position="floating">pet_image</ion-label>
+	<ion-input [(ngModel)]="pet_image"></ion-input>
+  </ion-item> 
+  <ion-item>
+	<ion-label position="floating">pet_name</ion-label>
+	<ion-input [(ngModel)]="pet_name"></ion-input>
+  </ion-item> 
+  <ion-item>
+	<ion-label position="floating">pet_breed</ion-label>
+	<ion-input [(ngModel)]="pet_breed"></ion-input>
+  </ion-item>
+
+  <ion-item>
+	<ion-label position="floating">pet_gender</ion-label>
+	<ion-input [(ngModel)]="pet_gender"></ion-input>
+  </ion-item>
+  <ion-row>
+	<ion-col>
+		<ion-button type="button" (click)="updatePet()" color="primary" shape="full" expand="block">
+			Update
+		</ion-button>
+	</ion-col>
+  </ion-row>
+
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
